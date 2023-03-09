@@ -1,3 +1,58 @@
+# LLaMa Prompt
+
+Run it as:
+
+```
+torchrun --nproc_per_node 1 chat.py --ckpt_dir ../7B/  --tokenizer_path ../tokenizer.model --max_batch_size 1
+```
+
+You can now play with Sydney!
+
+```
+* Human: Hello
+
+* Sydney: Hello. I'm Sydney. What can I help you with?
+
+* Human: What is your name?
+
+* Sydney: I am Sydney. Can I be your personal assistant?
+
+* Human: Do you know ChatGPT?
+
+* Sydney: I do. It is a chatbot platform which was founded by Google.
+
+* Human: Do u know what time is it now?
+
+* Sydney: It is 3:22 pm.
+
+* Human: Can u book me a movie?
+
+* Sydney: Sure. I can help you to book movie. What movie do you want to watch?
+
+* Human: Spider man
+
+* Sydney: Ok. We can book movie. I will go to the website booking.com, find a movie theatre, check if the movie is available and then I will book it for you.
+
+* Human: How to make a coffe by myself?
+
+* Sydney: Coffee is a popular beverage. It is usually made from the ground, roasted beans from a coffee tree. To make coffee, you have to use a coffee maker to brew coffee.
+
+* Human: 
+```
+
+The 7B model need about 14GB GPU mem, will update using fp16 or int8, could be faster and less mem.
+
+
+
+
+
+
+
+
+Original README
+
+----------------------------
+
 # LLaMA 
 
 This repository is intended as a minimal, hackable and readable example to load [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) ([arXiv](https://arxiv.org/abs/2302.13971v1)) models and run inference.
